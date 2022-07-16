@@ -1,0 +1,55 @@
+@import "colors";
+
+@import "nav";
+
+
+
+/* Variables */
+
+
+/* Nest Main */
+main {
+    width: 1350px;
+    min-height:535px;
+
+// Mixin or Extend for button
+
+
+.container{
+    background:$color-back;
+    height:500px;
+
+    .intro-text{
+        background: $color-grey;
+        border: 1px solid $color-white;
+        display:flex;
+        width: 50%;
+
+            .submit-buttton {
+                background: $color-back;
+                border: 0;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 7em;
+                height: 2.5em;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0.5em 2em;
+
+                //this is to center content vertically
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -120%);
+            }
+
+
+     }
+     
+        .intro-image{
+             width:50%;
+                }
+
+}
+
+}
