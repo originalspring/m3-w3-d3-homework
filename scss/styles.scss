@@ -1,55 +1,48 @@
-@import "colors";
+@import "colors.scss";
 
-@import "nav";
-
-
+@import "nav.scss";
 
 /* Variables */
 
-
+body{background-color: $color-back;}
 /* Nest Main */
 main {
     width: 1350px;
     min-height:535px;
+    display:flex;
+    background-color: $color-back;
 
 // Mixin or Extend for button
-
-
-.container{
-    background:$color-back;
-    height:500px;
-
-    .intro-text{
-        background: $color-grey;
-        border: 1px solid $color-white;
-        display:flex;
-        width: 50%;
+        #intro-text{
+            background: $color-grey;
+            border: 1px solid $color-white;
+            justify-content: flex-start;         
+            width: 50%;
+            text-align: center;
+            padding-top: 80px;
+          
 
             .submit-buttton {
-                background: $color-back;
-                border: 0;
-                border-radius: 10px;
-                cursor: pointer;
-                width: 7em;
-                height: 2.5em;
-                font-size: 1rem;
-                font-weight: bold;
-                padding: 0.5em 2em;
-
-                //this is to center content vertically
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                transform: translate(-50%, -120%);
-            }
-
-
-     }
-     
-        .intro-image{
-             width:50%;
+                    background: $color-back;
+                    color:white;
+                    cursor: pointer;
+                    border:0;
+                    
+                    font-size: 1rem;
+                    padding: 1em 0.5em;
+                    text-align: center;
                 }
+        }
+ 
+        #intro-image{
+            //width:50%;
+            width:800px;
+            justify-content: flex-end;
 
+            img {
+                width: 800px;
+            }
+        }
 }
 
-}
+ 

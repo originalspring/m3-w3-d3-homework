@@ -8,36 +8,40 @@ nav ul li {
 }
 
 /* Variables */
+body {
+  background-color: rgb(218, 170, 14);
+}
+
 /* Nest Main */
 main {
   width: 1350px;
   min-height: 535px;
+  display: flex;
+  background-color: rgb(218, 170, 14);
 }
-main .container {
-  background: rgb(218, 170, 14);
-  height: 500px;
-}
-main .container .intro-text {
+main #intro-text {
   background: rgb(212, 213, 216);
   border: 1px solid rgb(255, 255, 255);
-  display: flex;
+  justify-content: flex-start;
   width: 50%;
+  text-align: center;
+  padding-top: 80px;
 }
-main .container .intro-text .submit-buttton {
+main #intro-text .submit-buttton {
   background: rgb(218, 170, 14);
-  border: 0;
-  border-radius: 10px;
+  color: white;
   cursor: pointer;
-  width: 7em;
-  height: 2.5em;
+  border: 0;
   font-size: 1rem;
-  font-weight: bold;
-  padding: 0.5em 2em;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -120%);
+  padding: 1em 0.5em;
+  text-align: center;
 }
-main .container .intro-image {
-  width: 50%;
-}/*# sourceMappingURL=styles.css.map */
+main #intro-image {
+  width: 800px;
+  justify-content: flex-end;
+}
+main #intro-image img {
+  width: 800px;
+}
+
+/*# sourceMappingURL=styles.css.map */
